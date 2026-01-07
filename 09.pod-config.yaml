@@ -17,3 +17,13 @@ spec:
             configMapKeyRef:
               name: nginx-config
               key: duration
+---
+
+
+
+envFrom:
+- configMapKeyRef:
+    name: nginx-config
+
+
+    -------store non confidential info
