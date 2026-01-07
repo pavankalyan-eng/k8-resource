@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: annotations
+  annotations:
+    imageregistry:
+    buildurl:
+  containers:
+  - name: nginx
+    image: nginx
+
+
+
+    labels---> label are use internal resoures
+    annotations---> it is used to extranal resoures in k8
