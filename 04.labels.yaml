@@ -1,6 +1,6 @@
 kind: pod
 apiversion: v1
-metadat:
+metadata:
   name: labels
   labels:
     project: expense
