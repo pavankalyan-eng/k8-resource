@@ -1,0 +1,22 @@
+apiversion: app/v1
+kind: replicaset
+metadat:
+  name: nginx
+  labels:
+    app: nginx
+    tier: frontend
+spec:
+  replicas: 3
+  selector: 
+    matchlabels: 
+      tier: frontend
+      app: nginx
+  template:
+  metadat:
+    labels: 
+      app: nginx
+      tier: frontend
+    spec:
+      containers:
+      - name: nginx
+        image: nginx  
